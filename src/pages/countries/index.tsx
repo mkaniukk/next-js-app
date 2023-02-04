@@ -66,7 +66,7 @@ export const getStaticProps: GetStaticProps<{ countries: Country[] }> = async (
     context
 ) => {
     const query: string = gql`{
-        countries(filter: {continent: {eq: "EU"}}) {
+        countries {
           code
           name
           emoji

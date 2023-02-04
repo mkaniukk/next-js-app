@@ -43,7 +43,7 @@ const CountriesPage = ({ countries }: CountriesPageProps) => {
         return (
             <Link key={index} href={`/countries/${country.code}`}>
                 <ul className="text-3xl text-center hover:font-bold flex items-center justify-center h-40
-                   p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800">
+                   p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
                     {country.name}, {country.code}
                 </ul>
             </Link>

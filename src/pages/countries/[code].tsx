@@ -34,7 +34,7 @@ const CountryPage = ({ country }: CountryPageProps) => {
 
 export const getStaticPaths = async () => {
   const query: string = gql`{
-        countries(filter: {continent: {eq: "EU"}}) {
+        countries {
           code
           name
           emoji

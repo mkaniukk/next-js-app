@@ -49,7 +49,7 @@ export const getStaticPaths = async () => {
 
   const { countries } = data;
 
-  const paths = countries.map((country: any) => ({
+  const paths = countries.map((country: Country) => ({
     params: { code: country.code },
   }));
 
